@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="vue_template">
+  <meta name="author" content="nobkovskii">
+  <title>
+    <%= title %>
+  </title>
+  <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css">
+  <link href="https://getbootstrap.com/docs/4.0/examples/starter-template/starter-template.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Navbar</a>
+  </nav>
+
+  <div class="row">
+    <div class="card mx-auto" style="width: 200px;">
+      <div class="card-header">Sign up</div>
+      <div class="card-body">
+        <form action="/signup" method="post">
+          <div class="form-group">
+            <label>name</label>
+            <input type="text" class="form-control" placeholder="name" name="user_name" required>
+          </div>
+          <div class="form-group">
+            <label>password</label>
+            <input type="password" class="form-control" placeholder="password" name="password" required>
+          </div>
+          <button type="submit" class="btn btn-outline-dark">Sign up</button>
+        </form>
+      </div>
+    </div>
+  </div><!-- /.row -->
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+
+</html>

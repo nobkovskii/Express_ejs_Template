@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="vue_template">
+  <meta name="author" content="nobkovskii">
+  <title>
+    <%= title %>
+  </title>
+  <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css">
+  <link href="https://getbootstrap.com/docs/4.0/examples/starter-template/starter-template.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Navbar</a>
+  </nav>
+
+  <div class="container">
+    <div class="starter-template">
+      <h1>
+        <%= title %>
+      </h1>
+      <% if (typeof user == 'undefined') { %>
+        <button type="button" name="button" class="btn btn-outline-dark">
+          <a href="/signin">Sign in</a>
+        </button>
+        <button type="button" name="button" class="btn btn-outline-dark">
+          <a href="/signup">Sign up</a>
+        </button>
+      <% } %>
+
+      <% if (typeof user !== 'undefined') { %>
+          <div class="login-user"><%= user %>さんとしてログインしています</div>
+          <button type="button" name="button" class="btn btn-outline-dark">
+            <a href="/signout">Sign out</a>
+          </button>
+      <% } %>
+    </div>
+  </div><!-- /.container -->
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+
+</html>
