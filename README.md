@@ -1,6 +1,10 @@
 # Express_ejs_Template
 ## What is this
 おれおれてんぷれ
+Express + ejs のテンプレ。
+Bootstrapも使ってる。
+axiosは、今の所使ってない。将来的に使う予定。
+express-sessionでセッション使ってる。
 ## How to use
 * クローン
   * `git clone https://github.com/nobkovskii/Express_ejs_Template.git`
